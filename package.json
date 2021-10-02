@@ -6,5 +6,5 @@
   "repository": "git@github.com:StewardBot/application-handler.git",
   "author": "Patrick Coffey <patrickcoffey48@gmail.com>",
   "license": "MIT",
-  "private": false
+  "packageManager": "yarn@3.0.2"
 }
