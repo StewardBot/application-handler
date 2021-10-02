@@ -14,9 +14,12 @@
     "build": "tsc --build",
     "lint": "eslint --ext .js,.ts .",
     "format": "prettier --write './**/*.{js,ts}'",
+    "test": "jest --coverage --silent",
+    "type": "tsc --noEmit",
+    "twatch": "jest --no-coverage --watch --verbose",
     "husky:commit-msg": "commitlint -e ${GIT_PARAMS:-}",
-    "husky:pre-commit": "lint-staged",
-    "husky:pre-push": "lint-staged"
+    "husky:pre-commit": "lint-staged && yarn lint",
+    "husky:pre-push": "lint-staged && yarn test"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.0",
