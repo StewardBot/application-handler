@@ -1,0 +1,10 @@
+{
+  "name": "@stewardbot/application-handler",
+  "version": "0.0.0-development",
+  "description": "Discord bot for handling application processes",
+  "main": "index.js",
+  "repository": "git@github.com:StewardBot/application-handler.git",
+  "author": "Patrick Coffey <patrickcoffey48@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
